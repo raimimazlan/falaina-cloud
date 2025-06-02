@@ -44,19 +44,19 @@
 
 /************************************/
 /*** 	 01. Global Variables	  ***/
-/************************************/	
+/************************************/
 
-:root{
-	--primary-color				: #010535;
-	--secondary-color			: #F2F2F5;
-	--text-color				: #707070;
-	--accent-color				: #4D51AB;
-	--accent-secondary-color	: #55CEE3;
-	--white-color				: #FFFFFF;
-	--divider-color				: #F5F5F5;
-	--dark-divider-color		: #FFFFFF33;
-	--error-color				: rgb(230, 87, 87);
-	--default-font				: "Plus Jakarta Sans", sans-serif;
+:root {
+	--primary-color: #00031a; /* Deep Navy Blue */
+	--secondary-color: #0046ff; /* Purple (Dot Wave) – adds elegance and contrast */
+	--text-color: #0046ff; /* Falaina Blue – bold and legible for headings/text */
+	--accent-color: #4b166a; /* Darker Blue – rich and balanced */
+	--accent-secondary-color: #9e4edd; /* Violet Highlight – accentuated CTA or icon color */
+	--white-color: #ffffff;
+	--divider-color: #001c3c; /* Dark Blue – for subtle section breaks */
+	--dark-divider-color: #9e4edd33; /* Semi-transparent violet for visual softness */
+	--error-color: rgb(230, 87, 87); /* Consistent error red */
+	--default-font: "Plus Jakarta Sans", sans-serif;
 }
 
 /************************************/
@@ -2452,19 +2452,19 @@ header.main-header .header-sticky.active{
 	overflow: hidden;
 }
 
-.team-image figure:before{
+.team-image figure:before {
 	content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: auto;
-    right: 0;
-    bottom: 0;
-    left: 0;
-	background: linear-gradient(180deg, rgba(85, 202, 225, 0) 63.54%, #4E52AC 110.14%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(180deg, rgba(158, 78, 221, 0) 63.54%, #6d2b91 110.14%);
 	border-radius: 30px;
 	transition: all 0.4s ease-in-out;
-    z-index: 1;
+	z-index: 1;
 }
 
 .team-item:hover .team-image figure:before{
@@ -3121,18 +3121,18 @@ header.main-header .header-sticky.active{
 	background-size: cover;
 }
 
-.our-approach:before{
-	content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, rgba(242, 242, 245, 0.6) 99.12%, #F2F2F5 99.38%);
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-}
+	.our-approach:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(90deg, rgba(41, 243, 238, 0.6) 99.12%, #29f3ee 99.38%);
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}
 
 .our-approach-box{
 	display: flex;
