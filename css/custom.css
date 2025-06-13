@@ -385,6 +385,10 @@ body{
 		
 	}
 
+.background-white-font span {
+	color: #000 !important;
+}
+
 .section-title h3{
 	position: relative;
 	display: inline-block;
