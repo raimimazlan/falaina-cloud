@@ -89,7 +89,7 @@ body{
 	background-color: var(--secondary-color);
 }
 ::-webkit-scrollbar-thumb{
-	background: linear-gradient(180deg, var(--accent-color) 1.15%, var(--accent-secondary-color) 98.84%);
+	background: #fff;
 }
 
 p{
