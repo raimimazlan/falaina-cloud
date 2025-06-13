@@ -47,17 +47,25 @@
 /************************************/
 
 :root {
-	--primary-color: #00031a; /* Deep Navy Blue */
-	--secondary-color: #0046ff; /* Purple (Dot Wave) – adds elegance and contrast */
-	--text-color: #0046ff; /* Falaina Blue – bold and legible for headings/text */
-	--accent-color: #4b166a; /* Darker Blue – rich and balanced */
-	--accent-secondary-color: #9e4edd; /* Violet Highlight – accentuated CTA or icon color */
+	/* Brand Primary Colors */
+	--primary-color: #072bb7; /* Primary Blue */
+	--secondary-color: #063be4; /* Rich Blue */
+	/* Accent Colors */
+	--accent-color: #0435d5; /* Bright Blue */
+	--accent-secondary-color: #2d43bb; /* Primary Green */
+	/* Text and Background */
+	--text-color: #4B4A4A; /* Official Dark Gray for Text */
 	--white-color: #ffffff;
-	--divider-color: #001c3c; /* Dark Blue – for subtle section breaks */
-	--dark-divider-color: #9e4edd33; /* Semi-transparent violet for visual softness */
-	--error-color: rgb(230, 87, 87); /* Consistent error red */
-	--default-font: "Plus Jakarta Sans", sans-serif;
+	/* Dividers and Borders */
+	--divider-color: #0b2e73; /* Navy Blue */
+	--dark-divider-color: #072bb733; /* Primary Blue with transparency */
+	/* Status Colors */
+	--error-color: #FF5757; /* Official Danger color */
+	/* Typography */
+	--default-font: "Poppins", "Open Sans", "Roboto", sans-serif;
 }
+
+
 
 /************************************/
 /*** 	   02. General css		  ***/
@@ -98,7 +106,7 @@ h6{
 	margin : 0;
 	font-weight: 600;
 	line-height: 1.2em;
-	color: var(--primary-color);
+	color: var(--white-color);
 }
 
 figure{
@@ -371,6 +379,11 @@ body{
 	margin-bottom: 40px;
 	z-index: 1;
 }
+	.background-white-font {
+		
+		color: var(--primary-color) !important;
+		
+	}
 
 .section-title h3{
 	position: relative;
@@ -379,7 +392,7 @@ body{
 	line-height: normal;
 	letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: var(--white-color);
 	padding-left: 30px;
     margin-bottom: 20px;
 }
@@ -413,11 +426,17 @@ body{
 	cursor: none;
 }
 
-.section-title h1 span,
-.section-title h2 span{
-	background: linear-gradient(90.15deg, var(--accent-color) 0%, var(--accent-secondary-color) 100%);
-	background-clip: text;
-    -webkit-text-fill-color: transparent;
+	.section-title h1 span,
+	.section-title h2 span {
+		background:#000;/*linear-gradient(90.15deg, var(--accent-color) 0%, var(--accent-secondary-color) 100%);*/
+		background-clip: text;
+		/*-webkit-text-fill-color: transparent;*/
+	}
+
+span.primary-color {
+	background: #fff !important;
+	background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
 }
 
 .section-title p{
@@ -1517,19 +1536,20 @@ header.main-header .header-sticky.active{
 	margin-bottom: 0;
 }
 
-.ferature-list-item .icon-box{
-	height: 60px;
-	width: 60px;
-	background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
-    background-size: 200% auto;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 20px;
-	overflow: hidden;
-	transition: all 0.4s ease-in-out;
-}
+	.ferature-list-item .icon-box {
+		height: 60px;
+		width: 60px;
+		background: linear-gradient(to right, var(--accent-color) 0%, #5060ad 50%, var(--accent-color) 100%);
+		/*background: var(--accent-secondary-color) ;*/
+		background-size: 200% auto;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 20px;
+		overflow: hidden;
+		transition: all 0.4s ease-in-out;
+	}
 
 .ferature-list-item:hover .icon-box{
 	background-position: right center;
@@ -1687,7 +1707,7 @@ header.main-header .header-sticky.active{
 	position: relative;
 	font-weight: 600;
 	text-transform: capitalize;
-	background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
+	background: #fff; /*linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);*/
 	background-size: 200% auto;
     background-clip: text;
     -webkit-text-fill-color: transparent;
